@@ -1,0 +1,11 @@
+Here are all the people:
+<ul>
+    <% people.forEach(person => { %>
+        <li>
+            <a href="/person?name=<%= person.name %>">
+            <%= person.name %></a>:
+            <%= person.age %>
+        </li>
+    <% }); %>
+</ul>
+<br><a href="/public/index.html">Create New Person</a>
